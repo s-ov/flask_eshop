@@ -1,0 +1,9 @@
+1.  DB CREATION: 
+    - in terminal: python3 => from app import db(creates empty 'instanse' folder)
+    - app.py: python3 => with app.app_context():
+                             db.create_all()
+
+2. Payment system(in the example FONDY):
+    -  first of all regiser on FONDY to get <Api(merchant_id=1396424, secret_key='test')>
+    -  pip install cloudipsp
+    -  app.py =>>>  from cloudipsp import Api, Checkout

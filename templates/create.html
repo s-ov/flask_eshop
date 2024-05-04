@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Add product</title>{% endblock %}
+
+{% block content %}
+    <div class="conainer">
+        <div class="row">
+            <h4>Add product</h4>
+
+            <form method="post">
+                <input type="text" class="form-control m-2" name="name" id="name" placeholder="Enter item title" />
+                <input type="text" class="form-control m-2" name="price" id="price" placeholder="Enter item price" />
+                <input type="textarea" class="form-control m-2" name="description" id="description" />
+                <button type="submit" class="btn btn-success">Add product</button>
+            </form>
+        </div>
+    </div>
+    
+{% endblock %}
